@@ -1,0 +1,30 @@
+.aPropos {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: indigo;
+}
+.aPropos h1 {
+  margin-top: 4%;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+}
+.aPropos_content {
+  width: 35%;
+  height: 50%;
+}
+.aPropos_content p {
+  font-size: 1.6rem;
+}
+.aPropos_img {
+  width: 40%;
+  height: 60%;
+}
+.aPropos_img img {
+  width: 80%;
+  border-radius: 10px;
+}
