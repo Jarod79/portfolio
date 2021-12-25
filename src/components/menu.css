@@ -16,3 +16,17 @@
 .menu_link:hover {
   text-decoration: underline 2.5px rgb(255, 255, 255);
 }
+.linkedin {
+  width: 2vw;
+  margin-right: 40px;
+}
+.linkedin:hover {
+  width: 2.4vw;
+}
+.git {
+  width: 2.6vw;
+  margin-left: 40px;
+}
+.git:hover {
+  width: 3vw;
+}
