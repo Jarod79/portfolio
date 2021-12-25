@@ -6,7 +6,7 @@ const Contact = () => {
       <h1>Contact</h1>
 
       <div className="contact_content">
-        <form name="myForm" action="" method="post">
+        <form className="myForm" action="" method="post">
           <label for="firstname">Prénom</label>
           <input
             type="text"
@@ -16,7 +16,7 @@ const Contact = () => {
             required
           />
 
-          <label for="lastname">Nom de Famille</label>
+          <label htmlFor="lastname">Nom de Famille</label>
           <input
             type="text"
             id="lastname"
@@ -25,7 +25,7 @@ const Contact = () => {
             required
           />
 
-          <label for="email">Adresse Email</label>
+          <label htmlFor="email">Adresse Email</label>
           <input
             type="email"
             itemid="email"
@@ -35,7 +35,7 @@ const Contact = () => {
             required
           />
 
-          <label for="message">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
