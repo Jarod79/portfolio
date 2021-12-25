@@ -3,12 +3,10 @@ import Code from "../img/code.jpeg";
 
 const Apropos = () => {
   return (
-    <div className="aPropos" id="apropos">
+    <div className="aPropos">
       <h1>A Propos</h1>
-      <div className="aPropos_img">
-        <img src={Code} alt="CODE" />
-      </div>
       <div className="aPropos_content">
+        <img src={Code} alt="CODE" />
         <p>
           Fan de nouvelles technologies, et aimant apprendre, j’ai décidé de
           faire de ma passion mon métier. Ayant toujours été attiré par le
