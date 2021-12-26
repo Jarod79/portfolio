@@ -12,7 +12,7 @@
   height: 8vh;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.616);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .menu_link {
@@ -53,6 +53,6 @@
   margin: 0 24vw -2vh 24vw;
   width: 52vw;
   height: 8vh;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: rgba(4, 8, 75, 0.274);
 }

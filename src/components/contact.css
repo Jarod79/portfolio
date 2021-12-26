@@ -53,8 +53,8 @@ label {
 
 /* Style the submit button*/
 #submit {
-  background-color: grey;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.616);
+  color: blanchedalmond;
   padding: 12px 20px;
   margin: 0 2%;
   border: none;
@@ -64,9 +64,20 @@ label {
 
 /* When moving the mouse over the submit button, add a darker color */
 #submit:hover {
-  background-color: rgb(110, 110, 110);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
+#submit_b {
+  background-color: rgba(4, 8, 75, 0.274);
+  color: blanchedalmond;
+  padding: 12px 20px;
+  margin: 0 2%;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+#submit_b:hover {
+  background-color: rgba(4, 8, 75, 0.8);
+}
 /*Send confirmation message*/
 #confirmation {
   color: green;

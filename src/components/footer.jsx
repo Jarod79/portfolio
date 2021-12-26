@@ -2,9 +2,9 @@ import "./footer.css";
 
 const Footer = ({ change, setChange }) => {
   return (
-    <div className="footer">
+    <div className={change ? "footer" : "footer_b"}>
       <button onClick={() => setChange(!change)}>
-        {!change ? "Mode clair" : "Mode sombre"}
+        {!change ? "Bureau" : "Espace"}
       </button>
     </div>
   );

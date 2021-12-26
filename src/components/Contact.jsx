@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact.css";
 
-const Contact = () => {
+const Contact = ({ change }) => {
   const confirmation = () => {
     const message = document.getElementById("message");
     const firstName = document.getElementById("firstname");
@@ -55,7 +55,11 @@ const Contact = () => {
             required
           ></textarea>
 
-          <button id="submit" value="Submit" onClick={() => confirmation()}>
+          <button
+            id={change ? "submit" : "submit_b"}
+            value="Submit"
+            onClick={() => confirmation()}
+          >
             Envoyer
           </button>
         </form>

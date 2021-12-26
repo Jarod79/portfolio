@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/Apropos" element={<Apropos changeCss={change} />} />
           <Route path="/Competences" element={<Competences />} />
           <Route path="/Portfolio" element={<Portfolio changeCss={change} />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Contact" element={<Contact change={change} />} />
         </Routes>
         <Footer change={change} setChange={setChange} />
       </HashRouter>
