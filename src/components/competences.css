@@ -58,3 +58,33 @@
 .link_cv:hover {
   text-decoration: underline 2.5px rgb(255, 255, 255);
 }
+@media screen and (min-width: 2440px) {
+  .competences_content {
+    justify-content: space-evenly;
+  }
+  .competences_content_left {
+    text-align: center;
+    flex-direction: column;
+    width: 20vw;
+  }
+  .competences_content_left a {
+    flex-direction: column;
+    width: 30vw;
+  }
+  .competences_content_left img {
+    width: 20vw;
+    border-radius: 10px;
+  }
+  .link_cv {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 1vw;
+  }
+  .competences_content p {
+    text-align: center;
+    font-size: 1vw;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 1%;
+  }
+}

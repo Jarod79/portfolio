@@ -23,3 +23,8 @@
 .home img {
   width: 20vw;
 }
+@media screen and (min-width: 1920px) {
+  .home img {
+    width: 10vw;
+  }
+}

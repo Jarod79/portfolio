@@ -52,12 +52,22 @@
   line-height: 4vh;
   text-align: center;
   font-size: 1.6rem;
-  width: 30%;
+  width: 30vw;
   border-radius: 10px;
   padding: 1.5%;
   background-color: rgba(4, 8, 75, 0.274);
 }
 .aPropos_content_b img {
-  width: 40%;
+  width: 40vw;
   border-radius: 10px;
+}
+@media screen and (min-width: 1920px) {
+  .aPropos_content img {
+    width: 20vw;
+    border-radius: 10px;
+  }
+  .aPropos_content_b img {
+    width: 20vw;
+    border-radius: 10px;
+  }
 }

@@ -11,7 +11,7 @@ const Contact = ({ change }) => {
       firstName.value !== "" &&
       lastName.value !== "" &&
       email.value !== "" &&
-      alert("Votre message a bien été pris en compte merci.");
+      alert("Votre message a bien été envoyé merci.");
   };
   return (
     <div className="contact">

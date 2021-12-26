@@ -1,18 +1,13 @@
 /* Css for content whit background office */
-
 .menu {
-  position: relative;
-  top: 20px;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 24vw -2vh 24vw;
-  width: 52vw;
+  width: 100vw;
   height: 8vh;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.616);
-  border-radius: 10px;
 }
 
 .menu_link {
@@ -43,16 +38,34 @@
 }
 /* Css for content whit background earth */
 .menu_b {
-  position: relative;
-  top: 20px;
   flex-wrap: wrap;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 24vw -2vh 24vw;
-  width: 52vw;
+  width: 100vw;
   height: 8vh;
-  border-radius: 10px;
   background-color: rgba(4, 8, 75, 0.274);
+}
+@media screen and (min-width: 1920px) {
+  .menu {
+    width: 100vw;
+  }
+  .menu_b {
+    width: 100vw;
+  }
+  .linkedin {
+    width: 1.6vw;
+    margin-right: 40px;
+  }
+  .linkedin:hover {
+    width: 1.6vw;
+  }
+  .git {
+    width: 2vw;
+    margin-left: 40px;
+  }
+  .git:hover {
+    width: 2vw;
+  }
 }
