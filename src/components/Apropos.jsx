@@ -1,11 +1,11 @@
 import "./apropos.css";
 import Code from "../img/code.jpeg";
 
-const Apropos = () => {
+const Apropos = ({ changeCss }) => {
   return (
     <div className="aPropos">
       <h1>A Propos</h1>
-      <div className="aPropos_content">
+      <div className={changeCss ? "aPropos_content" : "aPropos_content_b"}>
         <img src={Code} alt="CODE" />
         <p>
           Fan de nouvelles technologies, et aimant apprendre, j’ai décidé de

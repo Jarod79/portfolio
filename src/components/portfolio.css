@@ -8,49 +8,85 @@
   }
 }
 .portfolio {
+  z-index: 1;
   animation-name: slideIn3;
   animation-duration: 1s;
   flex-wrap: wrap;
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
 }
-.portfolio h1 {
-  margin-top: 4%;
+
+.title_project {
+  width: 100vw;
+  height: 3vh;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+  text-shadow: black 2px 2px 2px;
+}
+.title_project h2 {
+  width: 25vw;
   text-align: center;
-  width: 100%;
-  font-size: 3rem;
 }
+/* Css for content whit background office */
 .portfolio_content {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  height: 50vh;
-  animation-duration: 1s;
+}
+
+.portfolio_content a {
+  color: blanchedalmond;
+  height: 30vh;
+  border-radius: 10px;
+  border: none;
+}
+
+.portfolio_content img {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 10px;
 }
 .portfolio_content :hover {
+  width: 25vw;
+  padding: 0 1%;
   text-decoration: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.616);
-  padding: 0 2%;
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
-.portfolio_content a {
-  color: aliceblue;
-  width: 25vw;
-  height: 35vh;
-  border-radius: 10px;
-  border: none;
-  transition-duration: 400ms;
+/* Css for content whit background earth */
+.portfolio_content_b {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
 }
 
-.portfolio_content img {
-  width: 25vw;
-  height: 35vh;
+.portfolio_content_b a {
+  color: blanchedalmond;
+  height: 30vh;
   border-radius: 10px;
+  border: none;
+}
+
+.portfolio_content_b img {
+  width: 25vw;
+  height: 30vh;
+  border-radius: 10px;
+}
+.portfolio_content_b :hover {
+  width: 25vw;
+  padding: 0 1%;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(4, 8, 75, 0.274);
+  font-size: 1.6vw;
 }

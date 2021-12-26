@@ -4,14 +4,20 @@ import Shoe from "../img/Shoe.png";
 import Wild from "../img/Wild.png";
 import Olentzero from "../img/Olentzero.png";
 
-const Portfolio = () => {
+const Portfolio = ({ changeCss }) => {
   const [hoverShoe, setHoverShoe] = useState(true);
   const [hoverWild, setHoverWild] = useState(true);
   const [hoverOlen, setHoverOlen] = useState(true);
   return (
     <div className="portfolio">
       <h1>Portfolio</h1>
-      <div className="portfolio_content">
+      <div className="title_project">
+        <h2>Shoe Shepherd</h2>
+        <h2>Wild Heroes</h2>
+        <h2>Olentzero</h2>
+      </div>
+
+      <div className={changeCss ? "portfolio_content" : "portfolio_content_b"}>
         {hoverShoe && (
           <a
             href="https://jarod79.github.io/Shoe-Shepherd-Site/"
@@ -29,10 +35,8 @@ const Portfolio = () => {
             className="content_shoe"
             onMouseLeave={() => setHoverShoe(true)}
           >
-            <p>
-              Premier projet de la formation, un site pour la sauvegarde des
-              chaussures abandonnées. Javascript, HTML, CSS, Github.
-            </p>
+            Premier projet de la formation, un site pour la sauvegarde des
+            chaussures abandonnées. Javascript, HTML, CSS, Github.
           </a>
         )}
         {hoverWild && (
@@ -52,10 +56,8 @@ const Portfolio = () => {
             className="content_wild"
             onMouseLeave={() => setHoverWild(true)}
           >
-            <p>
-              Deuxième projet de la formation, basé sur une API de super-héros.
-              Javascript, React, CSS, Api rest, Github.
-            </p>
+            Deuxième projet de la formation, basé sur une API de super-héros.
+            Javascript, React, CSS, Api rest, Github.
           </a>
         )}
         {hoverOlen && (
@@ -75,10 +77,8 @@ const Portfolio = () => {
             className="content_olentzero"
             onMouseLeave={() => setHoverOlen(true)}
           >
-            <p>
-              Projet de calendrier de l'avent, lors d'un hackaton de 30 heures.
-              Javascript, React, CSS, Github.
-            </p>
+            Projet de calendrier de l'avent, lors d'un hackaton de 30 heures.
+            Javascript, React, CSS, Github.
           </a>
         )}
       </div>

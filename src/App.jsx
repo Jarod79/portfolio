@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Menu from "./components/Menu";
 import { Routes, HashRouter, Route } from "react-router-dom";
 import Apropos from "./components/Apropos";
@@ -7,20 +8,26 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import BackgroundVideo from "./components/BackgroundVideo";
+import BackgroundVideoEarth from "./components/BackGroundVideoEarth";
+import Footer from "./components/footer";
 
 const App = () => {
+  const [change, setChange] = useState(true);
+  console.log(change);
   return (
     <div className="App">
       <HashRouter basename="/">
-        <BackgroundVideo />
-        <Menu />
+        {change && <BackgroundVideo changeVideo={change} />}
+        {!change && <BackgroundVideoEarth changeVideo={change} />}
+        <Menu change={change} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Apropos" element={<Apropos />} />
+          <Route path="/Apropos" element={<Apropos changeCss={change} />} />
           <Route path="/Competences" element={<Competences />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Portfolio" element={<Portfolio changeCss={change} />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+        <Footer change={change} setChange={setChange} />
       </HashRouter>
     </div>
   );

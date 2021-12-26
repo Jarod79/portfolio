@@ -1,8 +1,7 @@
 .background-video {
   width: 1920px;
   z-index: -1;
-  padding: auto;
-  position: fixed; /* optional depending on what you want to do in your app */
+  position: fixed;
 }
 
 @media screen and (min-width: 1920px) {

@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./menu.css";
 import git from "../img/git.png";
 import linkedin from "../img/Linkedin.png";
 
-const Menu = () => {
+const Menu = ({ change, setChange }) => {
+  console.log(change);
   return (
     <div className="navigation" id="accueil">
-      <div className="menu">
+      <div className={change ? "menu" : "menu_b"}>
         <a
           href="https://www.linkedin.com/in/eric-arrijuria-a64990/"
           target="blank"
@@ -15,21 +16,25 @@ const Menu = () => {
         >
           <img src={linkedin} alt="Linkedin" className="linkedin" />
         </a>
-        <Link className="menu_link" to="/">
+        <NavLink activeClassName="active" className="menu_link" to="/">
           ACCUEIL
-        </Link>
-        <Link className="menu_link" to="/Apropos">
+        </NavLink>
+        <NavLink activeClassName="active" className="menu_link" to="/Apropos">
           A PROPOS
-        </Link>
-        <Link className="menu_link" to="/Competences">
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          className="menu_link"
+          to="/Competences"
+        >
           COMPETENCES
-        </Link>
-        <Link className="menu_link" to="/portfolio">
+        </NavLink>
+        <NavLink activeClassName="active" className="menu_link" to="/portfolio">
           PORTFOLIO
-        </Link>
-        <Link className="menu_link" to="/contact">
+        </NavLink>
+        <NavLink activeClassName="active" className="menu_link" to="/contact">
           CONTACT
-        </Link>
+        </NavLink>
         <a
           href="https://github.com/Jarod79"
           target="blank"

@@ -6,17 +6,19 @@
     transform: scale(1);
   }
 }
-
 .home {
   animation-name: littleBig;
   animation-duration: 2s;
   font-size: 2vw;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.home h1 {
+  margin: 0;
 }
 .home img {
   width: 20vw;

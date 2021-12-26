@@ -7,7 +7,12 @@ const Competences = () => {
     <div className="competences">
       <h1>Compétences</h1>
       <div className="competences_content">
-        <img src={Logo} alt="CODE" />
+        <div className="competences_content_left">
+          <img src={Logo} alt="CODE" />
+          <a className="link_cv" href={Cv} download="Eric-Arrijuria:CV.pdf">
+            Télécharger mon C.V
+          </a>
+        </div>
         <p>
           Javascript <br /> HTML5
           <br /> CSS3 <br />
@@ -21,9 +26,6 @@ const Competences = () => {
           <br />
         </p>
       </div>
-      <a className="link_cv" href={Cv} download="Eric-Arrijuria:CV.pdf">
-        Télécharger mon C.V
-      </a>
     </div>
   );
 };

@@ -16,16 +16,11 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
 }
-.aPropos h1 {
-  margin-top: 4%;
-  text-align: center;
-  width: 100vw;
-  font-size: 3rem;
-}
+
+/* Css for content whit background office */
 .aPropos_content {
-  margin-top: -4%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -41,8 +36,28 @@
   padding: 1.5%;
   background-color: rgba(0, 0, 0, 0.664);
 }
-
 .aPropos_content img {
+  width: 40%;
+  border-radius: 10px;
+}
+/* Css for content whit background earth */
+.aPropos_content_b {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 70%;
+}
+.aPropos_content_b p {
+  line-height: 4vh;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 30%;
+  border-radius: 10px;
+  padding: 1.5%;
+  background-color: rgba(4, 8, 75, 0.274);
+}
+.aPropos_content_b img {
   width: 40%;
   border-radius: 10px;
 }
