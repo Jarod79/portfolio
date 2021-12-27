@@ -13,18 +13,17 @@ const Competences = () => {
             Télécharger mon C.V
           </a>
         </div>
-        <p>
-          Javascript <br /> HTML5
-          <br /> CSS3 <br />
-          React
-          <br /> Node Js
-          <br /> Express
-          <br /> GitHub
-          <br /> Mysql
-          <br />
-          Méthode Agile
-          <br />
-        </p>
+        <div className="competences_language">
+          <p>Javascript</p>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>React</p>
+          <p>Node Js</p>
+          <p>Express</p>
+          <p>GitHub</p>
+          <p>Mysql</p>
+          <p>Méthode Agile</p>
+        </div>
       </div>
     </div>
   );

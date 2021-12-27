@@ -88,3 +88,39 @@
     padding: 1%;
   }
 }
+@media screen and (max-width: 820px) and (min-height: 420px) {
+  .competences {
+    height: 60vh;
+  }
+  .competences_content {
+    margin-top: 8vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+  }
+  .competences_content_left {
+    width: 80vw;
+  }
+  .competences_language {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 8vh;
+  }
+  .competences_content_left img {
+    width: 80vw;
+  }
+  .link_cv {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 3vw;
+    width: 80vw;
+    margin-left: 0vw;
+  }
+  .competences_content p {
+    text-align: center;
+    font-size: 4vw;
+    width: 30vw;
+    padding: 1%;
+  }
+}

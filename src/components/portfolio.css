@@ -17,27 +17,29 @@
   width: 100vw;
   height: 85vh;
 }
-.portfolio h1 {
-  margin-top: 3%;
+.portfolio_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.portfolio_card {
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30vw;
 }
 
 .title_project {
-  width: 100vw;
-  height: 3vh;
-  display: flex;
-  justify-content: space-around;
+  height: 8vh;
+  width: 30vw;
   font-size: 1.2vw;
   text-shadow: black 2px 2px 2px;
-}
-.title_project h2 {
-  width: 25vw;
   text-align: center;
 }
+
 /* Css for content whit background office */
 .portfolio_content {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
 }
 
 .portfolio_content a {
@@ -67,7 +69,6 @@
 .portfolio_content_b {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
 }
 
 .portfolio_content_b a {
@@ -92,4 +93,41 @@
   text-align: center;
   background-color: rgba(4, 8, 75, 0.274);
   font-size: 1.6vw;
+}
+@media screen and (min-width: 2440px) {
+  /* Css for content whit background office */
+  .portfolio_content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .portfolio_content a {
+    height: 45vh;
+  }
+
+  .portfolio_content img {
+    height: 45vh;
+  }
+  .title_project {
+    margin-bottom: 5vh;
+    font-size: 1vw;
+  }
+  /* Css for content whit background earth */
+  .portfolio_content_b {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .portfolio_content_b a {
+    height: 45vh;
+  }
+
+  .portfolio_content_b img {
+    height: 45vh;
+  }
+}
+@media screen and (max-width: 820px) and (min-height: 560px) {
+  .portfolio_container {
+    flex-direction: column;
+  }
 }

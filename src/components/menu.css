@@ -23,18 +23,18 @@
   text-decoration: underline 2.5px rgb(255, 255, 255);
 }
 .linkedin {
-  width: 2vw;
+  width: 2.6vw;
   margin-right: 40px;
 }
 .linkedin:hover {
-  width: 2.4vw;
+  width: 2.8vw;
 }
 .git {
-  width: 2.6vw;
+  width: 3.2vw;
   margin-left: 40px;
 }
 .git:hover {
-  width: 3vw;
+  width: 3.4vw;
 }
 /* Css for content whit background earth */
 .menu_b {
@@ -47,7 +47,27 @@
   height: 8vh;
   background-color: rgba(4, 8, 75, 0.274);
 }
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 820px) and (min-height: 420px) {
+  .menu {
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+  }
+  .menu_b {
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+  }
+  .linkedin {
+    margin-left: 12vw;
+    width: 10vw;
+  }
+  .git {
+    width: 12vw;
+    margin-right: 12vw;
+  }
+}
+@media screen and (min-width: 2440px) {
   .menu {
     width: 100vw;
   }

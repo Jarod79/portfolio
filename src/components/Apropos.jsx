@@ -6,7 +6,11 @@ const Apropos = ({ changeCss }) => {
     <div className="aPropos">
       <h1>A Propos</h1>
       <div className={changeCss ? "aPropos_content" : "aPropos_content_b"}>
-        <img src={Code} alt="CODE" />
+        <img
+          src={Code}
+          alt="CODE"
+          className={changeCss ? "image" : "image_b"}
+        />
         <p>
           Fan de nouvelles technologies, et aimant apprendre, j’ai décidé de
           faire de ma passion mon métier. Ayant toujours été attiré par le
