@@ -13,7 +13,6 @@ import Footer from "./components/footer";
 
 const App = () => {
   const [change, setChange] = useState(true);
-  console.log(change);
   return (
     <div className="App">
       <HashRouter basename="/">

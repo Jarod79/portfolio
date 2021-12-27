@@ -5,7 +5,6 @@ import git from "../img/git.png";
 import linkedin from "../img/Linkedin.png";
 
 const Menu = ({ change, setChange }) => {
-  console.log(change);
   return (
     <div className="navigation" id="accueil">
       <div className={change ? "menu" : "menu_b"}>
