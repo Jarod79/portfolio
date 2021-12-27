@@ -61,6 +61,25 @@ label {
   border-radius: 4px;
   margin-top: 1rem;
 }
+.alert {
+  font-size: 1.5vw;
+  color: red;
+  padding: 12px 20px;
+  margin: 2%;
+  padding: 12px 20px;
+  text-align: center;
+  width: 31.5vw;
+  text-shadow: black 2px 1px 1px;
+}
+.confirmation {
+  font-size: 1.5vw;
+  color: green;
+  padding: 12px 20px;
+  margin: 2%;
+  padding: 12px 20px;
+  text-align: center;
+  width: 31.5vw;
+}
 
 /* When moving the mouse over the submit button, add a darker color */
 #submit:hover {

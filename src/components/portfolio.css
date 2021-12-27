@@ -17,6 +17,9 @@
   width: 100vw;
   height: 85vh;
 }
+.portfolio h1 {
+  margin-top: 3%;
+}
 
 .title_project {
   width: 100vw;

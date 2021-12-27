@@ -15,7 +15,7 @@ const App = () => {
   const [change, setChange] = useState(true);
   return (
     <div className="App">
-      <HashRouter basename="/portfolio-front">
+      <HashRouter basename="/">
         {change && <BackgroundVideo changeVideo={change} />}
         {!change && <BackgroundVideoEarth changeVideo={change} />}
         <Menu change={change} />

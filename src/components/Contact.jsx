@@ -3,17 +3,26 @@ import axios from "axios";
 import "./contact.css";
 
 const Contact = ({ change }) => {
+  //Usestate pour récupérer les valeurs du formaulaire
   const [prenom, setPrenom] = useState("");
   const [nom, setNom] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
+  //Usestate pour l'affichage des différentes erreurs
+  const [empty, setEmpty] = useState("");
+  const [confirmation, setConfirmation] = useState("");
+  //Regex pour la validation de l'email
+  const emailRegex = /\S+@\S+\.\S+/;
 
-  const postData = (e) => {
+//Validation du formaulaire et envois du mail
+  const validate = (e) => {
     e.preventDefault();
-    prenom !== "" &&
+    if (
+      message !=="" &&
+      prenom !== "" &&
       nom !== "" &&
-      mail !== "" &&
-      message !== "" &&
+      emailRegex.test(mail) 
+    ) { 
       axios
         .post("http://localhost:8000/", {
           prenom,
@@ -21,14 +30,22 @@ const Contact = ({ change }) => {
           mail,
           message,
         })
-        .then((response) => alert("Votre message a bien été envoyé merci."))
-        .catch((err) => console.error(err));
+        .then((response) =>{
+           setConfirmation("Votre message a bien été pris en compte, merci.")
+          setEmpty("")})
+          .catch((err) => console.error(err));
+    } else if (!emailRegex.test(mail)) { 
+      setEmpty('Email invalide !')
+      setConfirmation("");
+      } else {
+      setEmpty("Vous avez oublié de rentrer un champ.");
+      setConfirmation("");
+    }
   };
 
   return (
     <div className="contact">
       <h1>Contact</h1>
-
       <div className="contact_content">
         <form className="myForm" method="POST">
           <label htmlFor="firstname">Prénom</label>
@@ -36,11 +53,9 @@ const Contact = ({ change }) => {
             type="text"
             id="firstname"
             name="prenom"
+            onChange={(e)=>setPrenom(e.target.value)}
             placeholder="Votre prénom..."
-            value={prenom}
-            onChange={(e) => setPrenom(e.target.value)}
             required
-            bodyFormData
           />
 
           <label htmlFor="lastname">Nom de Famille</label>
@@ -48,21 +63,17 @@ const Contact = ({ change }) => {
             type="text"
             id="lastname"
             name="nom"
-            value={nom}
-            onChange={(e) => setNom(e.target.value)}
+            onChange={(e)=>setNom(e.target.value)}
             placeholder="Votre nom de famille..."
-            required
           />
 
           <label htmlFor="email">Adresse Email</label>
           <input
             type="email"
-            name="mail"
+            name="email"
             id="email"
-            value={mail}
-            onChange={(e) => setMail(e.target.value)}
+            onChange={((e)=>setMail(e.target.value))}
             placeholder="prénom.nom@gmail.com"
-            required
           />
 
           <label htmlFor="message">Message</label>
@@ -70,19 +81,19 @@ const Contact = ({ change }) => {
             id="message"
             name="message"
             type="text"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={(e)=>setMessage(e.target.value)}
             placeholder="Écrivez votre message..."
-            required
           ></textarea>
 
           <button
             id={change ? "submit" : "submit_b"}
             type="Submit"
-            onClick={postData}
+            onClick={validate}
           >
             Envoyer
           </button>
+          {empty && <div className={"alert"}>{empty}</div>}
+          {confirmation && <div className={"confirmation"}>{confirmation}</div>}
         </form>
       </div>
     </div>

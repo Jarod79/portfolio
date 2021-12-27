@@ -37,7 +37,7 @@
   background-color: rgba(0, 0, 0, 0.664);
 }
 .aPropos_content img {
-  width: 40%;
+  width: 35vw;
   border-radius: 10px;
 }
 /* Css for content whit background earth */
@@ -58,7 +58,7 @@
   background-color: rgba(4, 8, 75, 0.274);
 }
 .aPropos_content_b img {
-  width: 40vw;
+  width: 35vw;
   border-radius: 10px;
 }
 @media screen and (min-width: 1920px) {
