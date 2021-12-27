@@ -14,30 +14,31 @@ const Contact = ({ change }) => {
   //Regex pour la validation de l'email
   const emailRegex = /\S+@\S+\.\S+/;
 
-//Validation du formaulaire et envois du mail
+  //Validation du formaulaire et envois du mail
   const validate = (e) => {
     e.preventDefault();
     if (
-      message !=="" &&
+      message !== "" &&
       prenom !== "" &&
       nom !== "" &&
-      emailRegex.test(mail) 
-    ) { 
+      emailRegex.test(mail)
+    ) {
       axios
-        .post("http://localhost:8000/", {
+        .post("https://portfolioeabackend.herokuapp.com/", {
           prenom,
           nom,
           mail,
           message,
         })
-        .then((response) =>{
-           setConfirmation("Votre message a bien été pris en compte, merci.")
-          setEmpty("")})
-          .catch((err) => console.error(err));
-    } else if (!emailRegex.test(mail)) { 
-      setEmpty('Email invalide !')
+        .then((response) => {
+          setConfirmation("Votre message a bien été pris en compte, merci.");
+          setEmpty("");
+        })
+        .catch((err) => console.error(err));
+    } else if (!emailRegex.test(mail)) {
+      setEmpty("Email invalide !");
       setConfirmation("");
-      } else {
+    } else {
       setEmpty("Vous avez oublié de rentrer un champ.");
       setConfirmation("");
     }
@@ -53,7 +54,7 @@ const Contact = ({ change }) => {
             type="text"
             id="firstname"
             name="prenom"
-            onChange={(e)=>setPrenom(e.target.value)}
+            onChange={(e) => setPrenom(e.target.value)}
             placeholder="Votre prénom..."
             required
           />
@@ -63,7 +64,7 @@ const Contact = ({ change }) => {
             type="text"
             id="lastname"
             name="nom"
-            onChange={(e)=>setNom(e.target.value)}
+            onChange={(e) => setNom(e.target.value)}
             placeholder="Votre nom de famille..."
           />
 
@@ -72,7 +73,7 @@ const Contact = ({ change }) => {
             type="email"
             name="email"
             id="email"
-            onChange={((e)=>setMail(e.target.value))}
+            onChange={(e) => setMail(e.target.value)}
             placeholder="prénom.nom@gmail.com"
           />
 
@@ -81,7 +82,7 @@ const Contact = ({ change }) => {
             id="message"
             name="message"
             type="text"
-            onChange={(e)=>setMessage(e.target.value)}
+            onChange={(e) => setMessage(e.target.value)}
             placeholder="Écrivez votre message..."
           ></textarea>
 
