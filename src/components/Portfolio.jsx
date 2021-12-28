@@ -17,115 +17,133 @@ const Portfolio = ({ changeCss }) => {
           <div className="title_project">
             <h2>Shoe Shepherd</h2>
           </div>
-          {hoverShoe && (
-            <div
-              className={
-                changeCss ? "portfolio_content" : "portfolio_content_b"
-              }
-            >
+          <div
+            className={changeCss ? "portfolio_content" : "portfolio_content_b"}
+          >
+            {hoverShoe && (
               <a
                 href="https://jarod79.github.io/Shoe-Shepherd-Site/"
                 target="blank"
-                className="content_shoe"
+                className="content_link"
                 onMouseEnter={() => setHoverShoe(false)}
               >
-                <img src={Shoe} alt="Shoe shepherd" />
+                <img src={Shoe} alt="Shoe_shepherd" />
               </a>
-            </div>
-          )}
-          {!hoverShoe && (
-            <div
-              className={
-                changeCss ? "portfolio_content" : "portfolio_content_b"
-              }
-            >
-              <a
-                href="https://jarod79.github.io/Shoe-Shepherd-Site/"
-                target="blank"
-                className="content_shoe"
-                onMouseLeave={() => setHoverShoe(true)}
-              >
-                Premier projet de la formation, un site pour la sauvegarde des
-                chaussures abandonnées. Javascript, HTML, CSS, Github.
-              </a>
-            </div>
-          )}
+            )}
+            {!hoverShoe && (
+              <>
+                <a
+                  href="https://jarod79.github.io/Shoe-Shepherd-Site/"
+                  target="blank"
+                  className="content_phone"
+                  onMouseEnter={() => setHoverShoe(false)}
+                >
+                  <img src={Shoe} alt="Shoe_shepherd" />
+                </a>
+                <a
+                  href="https://jarod79.github.io/Shoe-Shepherd-Site/"
+                  target="blank"
+                  className="content_hover"
+                  onMouseLeave={() => setHoverShoe(true)}
+                >
+                  Premier projet de la formation, un site pour la sauvegarde des
+                  chaussures abandonnées. Javascript, HTML, CSS, Github.
+                </a>
+              </>
+            )}
+          </div>
+          <p className="content_phone_paragraph">
+            Premier projet de la formation, un site pour la sauvegarde des
+            chaussures abandonnées. Javascript, HTML, CSS, Github.
+          </p>
         </div>
         <div className="portfolio_card">
           <div className="title_project">
             <h2>Wild Heroes</h2>
           </div>
-          {hoverWild && (
-            <div
-              className={
-                changeCss ? "portfolio_content" : "portfolio_content_b"
-              }
-            >
+          <div
+            className={changeCss ? "portfolio_content" : "portfolio_content_b"}
+          >
+            {hoverWild && (
               <a
                 href="https://jarod79.github.io/wild-heroes/#/"
                 target="blank"
-                className="content_wild"
+                className="content_link"
                 onMouseEnter={() => setHoverWild(false)}
               >
                 <img src={Wild} alt="Wild Heroes" />
               </a>
-            </div>
-          )}
-          {!hoverWild && (
-            <div
-              className={
-                changeCss ? "portfolio_content" : "portfolio_content_b"
-              }
-            >
-              <a
-                href="https://jarod79.github.io/wild-heroes/#/"
-                target="blank"
-                className="content_wild"
-                onMouseLeave={() => setHoverWild(true)}
-              >
-                Deuxième projet de la formation, basé sur une API de
-                super-héros. Javascript, React, CSS, Api rest, Github.
-              </a>
-            </div>
-          )}
+            )}
+            {!hoverWild && (
+              <>
+                <a
+                  href="https://jarod79.github.io/wild-heroes/#/"
+                  target="blank"
+                  className="content_phone"
+                  onMouseEnter={() => setHoverWild(false)}
+                >
+                  <img src={Wild} alt="Wild Heroes" />
+                </a>
+                <a
+                  href="https://jarod79.github.io/wild-heroes/#/"
+                  target="blank"
+                  className="content_hover"
+                  onMouseLeave={() => setHoverWild(true)}
+                >
+                  Deuxième projet de la formation, basé sur une API de
+                  super-héros. Javascript, React, CSS, Api rest, Github.
+                </a>
+              </>
+            )}
+          </div>
+          <p className="content_phone_paragraph">
+            Deuxième projet de la formation, basé sur une API de super-héros.
+            Javascript, React, CSS, Api rest, Github.
+          </p>
         </div>
         <div className="portfolio_card">
           <div className="title_project">
             <h2>Olentzero</h2>
           </div>
-          {hoverOlen && (
-            <div
-              className={
-                changeCss ? "portfolio_content" : "portfolio_content_b"
-              }
-            >
+          <div
+            className={changeCss ? "portfolio_content" : "portfolio_content_b"}
+          >
+            {hoverOlen && (
               <a
                 href="https://jarod79.github.io/olentzero-music/"
                 target="blank"
-                className="content_olentzero"
+                className="content_link"
                 onMouseEnter={() => setHoverOlen(false)}
               >
                 <img src={Olentzero} alt="Olentzero" />
               </a>
-            </div>
-          )}
-          {!hoverOlen && (
-            <div
-              className={
-                changeCss ? "portfolio_content" : "portfolio_content_b"
-              }
-            >
-              <a
-                href="https://jarod79.github.io/olentzero-music/"
-                target="blank"
-                className="content_olentzero"
-                onMouseLeave={() => setHoverOlen(true)}
-              >
-                Projet de calendrier de l'avent, lors d'un hackaton de 30
-                heures. Javascript, React, CSS, Github.
-              </a>
-            </div>
-          )}
+            )}
+            {!hoverOlen && (
+              <>
+                <a
+                  href="https://jarod79.github.io/olentzero-music/"
+                  target="blank"
+                  className="content_phone"
+                  onMouseLeave={() => setHoverOlen(true)}
+                >
+                  <img src={Olentzero} alt="Olentzero" />
+                </a>
+                <a
+                  href="https://jarod79.github.io/olentzero-music/"
+                  target="blank"
+                  className="content_hover"
+                  onMouseLeave={() => setHoverOlen(true)}
+                >
+                  Projet de calendrier de l'avent, lors d'un hackaton de 30
+                  heures. Javascript, React, CSS, Github.
+                </a>
+              </>
+            )}
+          </div>
+          <p className="content_phone_paragraph">
+            Projet de calendrier de l'avent, lors d'un hackaton de 30 heures.
+            Javascript, React, CSS, Github.
+          </p>
         </div>
       </div>
     </div>

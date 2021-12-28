@@ -9,7 +9,12 @@
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.616);
 }
-
+.menu_button {
+  display: none;
+}
+.menu_button_b {
+  display: none;
+}
 .menu_link {
   color: blanchedalmond;
   text-decoration: none;
@@ -47,16 +52,35 @@
   height: 8vh;
   background-color: rgba(4, 8, 75, 0.274);
 }
-@media screen and (max-width: 820px) and (min-height: 420px) {
+@media screen and (max-width: 760px) and (min-height: 420px) {
   .menu {
+    transition-delay: 400ms;
     flex-direction: column;
     width: 100vw;
     height: 30vh;
+  }
+  .menu_button {
+    display: block;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.616);
+    border: none;
+  }
+  .menu_button img {
+    width: 10vw;
   }
   .menu_b {
     flex-direction: column;
     width: 100vw;
     height: 30vh;
+  }
+  .menu_button_b {
+    display: block;
+    width: 100vw;
+    background-color: rgba(4, 8, 75, 0.274);
+    border: none;
+  }
+  .menu_button_b img {
+    width: 10vw;
   }
   .linkedin {
     margin-left: 12vw;
