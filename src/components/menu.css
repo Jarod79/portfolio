@@ -9,6 +9,10 @@
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.616);
 }
+
+#manu_hide {
+  display: block;
+}
 .menu_button {
   display: none;
 }
@@ -21,6 +25,9 @@
   font-size: 2.5vh;
   margin: 0 1%;
 }
+.menu_link_social {
+  text-align: center;
+}
 .active {
   text-decoration: underline 3px rgb(255, 255, 255);
 }
@@ -29,14 +36,12 @@
 }
 .linkedin {
   width: 2.6vw;
-  margin-right: 40px;
 }
 .linkedin:hover {
   width: 2.8vw;
 }
 .git {
   width: 3.2vw;
-  margin-left: 40px;
 }
 .git:hover {
   width: 3.4vw;
@@ -52,12 +57,14 @@
   height: 8vh;
   background-color: rgba(4, 8, 75, 0.274);
 }
-@media screen and (max-width: 760px) and (min-height: 420px) {
+@media screen and (max-width: 760px) {
   .menu {
-    transition-delay: 400ms;
     flex-direction: column;
     width: 100vw;
-    height: 30vh;
+    height: auto;
+  }
+  #menu_show {
+    display: none;
   }
   .menu_button {
     display: block;
@@ -83,33 +90,40 @@
     width: 10vw;
   }
   .linkedin {
-    margin-left: 12vw;
     width: 10vw;
   }
   .git {
     width: 12vw;
-    margin-right: 12vw;
   }
 }
 @media screen and (min-width: 2440px) {
-  .menu {
-    width: 100vw;
-  }
-  .menu_b {
-    width: 100vw;
-  }
   .linkedin {
     width: 1.6vw;
-    margin-right: 40px;
   }
   .linkedin:hover {
     width: 1.6vw;
   }
   .git {
     width: 2vw;
-    margin-left: 40px;
   }
   .git:hover {
     width: 2vw;
+  }
+}
+@media screen and (max-height: 780px) {
+  .menu {
+    height: 15vh;
+  }
+  .menu_b {
+    height: 15vh;
+  }
+  .menu_link {
+    font-size: 1em;
+  }
+  .linkedin {
+    width: 4vw;
+  }
+  .git {
+    width: 5vw;
   }
 }

@@ -38,11 +38,21 @@
 .footer_b button:hover {
   background-color: rgba(4, 8, 75, 0.8);
 }
-@media screen and (max-width: 760px) and (min-height: 560px) {
+@media screen and (max-width: 760px) {
   .footer button {
     padding: 0.6vh 3vw;
   }
   .footer_b button {
     padding: 0.6vh 3vw;
+  }
+}
+@media screen and (max-height: 780px) {
+  .footer button {
+    padding: 1.5vh 2vw;
+    margin-top: 2.1vh;
+  }
+  .footer_b button {
+    padding: 1.5vh 2vw;
+    margin-top: 2.1vh;
   }
 }

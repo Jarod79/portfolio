@@ -132,7 +132,7 @@
     height: 45vh;
   }
 }
-@media screen and (max-width: 760px) and (min-height: 560px) {
+@media screen and (max-width: 760px) {
   .portfolio_container {
     flex-direction: column;
   }

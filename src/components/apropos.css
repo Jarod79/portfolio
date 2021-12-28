@@ -25,15 +25,13 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
-  height: 70%;
 }
 .aPropos_content p {
-  line-height: 4vh;
   text-align: center;
-  font-size: 1.6rem;
-  width: 30%;
+  font-size: 1.8em;
+  width: 35vw;
   border-radius: 10px;
-  padding: 1.5%;
+  padding: 8vh 1vw;
   background-color: rgba(0, 0, 0, 0.664);
 }
 .image {
@@ -46,34 +44,29 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
-  height: 70%;
 }
 .aPropos_content_b p {
-  line-height: 4vh;
   text-align: center;
-  font-size: 1.6rem;
-  width: 30vw;
+  font-size: 1.8em;
+  width: 35vw;
   border-radius: 10px;
-  padding: 1.5%;
+  padding: 8vh 1vw;
   background-color: rgba(4, 8, 75, 0.274);
 }
 .image_b {
   width: 35vw;
   border-radius: 10px;
 }
-@media screen and (max-width: 760px) and (min-height: 420px) {
-  .aPropos {
-    height: 90vh;
-    margin-top: -4vh;
-  }
+@media screen and (max-width: 760px) {
   .aPropos_content {
     flex-direction: column-reverse;
     justify-content: start;
   }
   .aPropos_content p {
-    line-height: 2.5vh;
+    margin-top: 2vh;
+    padding: 2vh 2vw;
     text-align: center;
-    font-size: 4.3vw;
+    font-size: 1em;
     width: 80vw;
   }
   .image {
@@ -85,9 +78,10 @@
     justify-content: flex-start;
   }
   .aPropos_content_b p {
-    line-height: 2.5vh;
+    margin-top: 2vh;
+    padding: 2vh 2vw;
     text-align: center;
-    font-size: 4.3vw;
+    font-size: 1em;
     width: 80vw;
   }
   .image_b {
@@ -103,5 +97,38 @@
   .aPropos_content_b img {
     width: 20vw;
     border-radius: 10px;
+  }
+}
+@media screen and (max-height: 780px) {
+  .aPropos {
+    margin-top: 5vh;
+  }
+  .aPropos_content {
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+  .aPropos_content p {
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 1.4em;
+    width: 80vw;
+  }
+  .image {
+    margin: 10vh;
+    width: 50vw;
+  }
+  .aPropos_content_b {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .aPropos_content_b p {
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 1.4em;
+    width: 80vw;
+  }
+  .image_b {
+    margin-top: 10vh;
+    width: 50vw;
   }
 }
