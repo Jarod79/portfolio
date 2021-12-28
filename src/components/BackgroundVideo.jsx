@@ -1,5 +1,5 @@
 import React from "react";
-import "./backgroundVideo.css";
+
 import Office from "../img/Background2.mp4";
 
 const BackgroundVideo = ({ changeVideo }) => {

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./menu.css";
 import git from "../img/git.png";
 import linkedin from "../img/Linkedin.png";
 import Burger from "../img/burger.png";

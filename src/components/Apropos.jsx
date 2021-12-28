@@ -1,4 +1,3 @@
-import "./apropos.css";
 import Code from "../img/code.jpeg";
 
 const Apropos = ({ changeCss }) => {

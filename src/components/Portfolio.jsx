@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./portfolio.css";
 import Shoe from "../img/Shoe.png";
 import Wild from "../img/Wild.png";
 import Olentzero from "../img/Olentzero.png";

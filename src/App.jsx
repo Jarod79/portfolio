@@ -1,3 +1,4 @@
+import "./css/allCss.css";
 import "./App.css";
 import { useState } from "react";
 import Menu from "./components/Menu";

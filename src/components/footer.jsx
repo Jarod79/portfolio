@@ -1,5 +1,3 @@
-import "./footer.css";
-
 const Footer = ({ change, setChange }) => {
   return (
     <div className={change ? "footer" : "footer_b"}>

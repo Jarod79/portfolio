@@ -1,4 +1,3 @@
-import "./home.css";
 import Avatar from "../img/Avatar.png";
 
 const Home = () => {

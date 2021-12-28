@@ -1,4 +1,3 @@
-import "./competences.css";
 import Logo from "../img/LogoJs.png";
 import Cv from "../cv/cv.pdf";
 
