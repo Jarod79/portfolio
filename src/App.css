@@ -41,7 +41,7 @@ h1 {
     font-size: 8vw;
   }
 }
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 440px) {
   h1 {
     font-size: 4vw;
   }

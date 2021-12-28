@@ -57,11 +57,25 @@
   height: 8vh;
   background-color: rgba(4, 8, 75, 0.274);
 }
+@media screen and (min-width: 2440px) {
+  .linkedin {
+    width: 1.6vw;
+  }
+  .linkedin:hover {
+    width: 1.6vw;
+  }
+  .git {
+    width: 2vw;
+  }
+  .git:hover {
+    width: 2vw;
+  }
+}
 @media screen and (max-width: 760px) {
   .menu {
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    height: 35vh;
   }
   #menu_show {
     display: none;
@@ -78,7 +92,7 @@
   .menu_b {
     flex-direction: column;
     width: 100vw;
-    height: 30vh;
+    height: 35vh;
   }
   .menu_button_b {
     display: block;
@@ -96,21 +110,8 @@
     width: 12vw;
   }
 }
-@media screen and (min-width: 2440px) {
-  .linkedin {
-    width: 1.6vw;
-  }
-  .linkedin:hover {
-    width: 1.6vw;
-  }
-  .git {
-    width: 2vw;
-  }
-  .git:hover {
-    width: 2vw;
-  }
-}
-@media screen and (max-height: 780px) {
+
+@media screen and (max-height: 440px) {
   .menu {
     height: 15vh;
   }

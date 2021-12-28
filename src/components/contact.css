@@ -99,8 +99,14 @@ label {
     font-size: 3vh;
   }
 }
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 440px) {
   .myForm {
     margin-bottom: 5vh;
+  }
+  .alert {
+    font-size: 1.2em;
+  }
+  .confirmation {
+    font-size: 1.2vh;
   }
 }

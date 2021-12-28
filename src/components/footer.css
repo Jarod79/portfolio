@@ -46,7 +46,7 @@
     padding: 0.6vh 3vw;
   }
 }
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 440px) {
   .footer button {
     padding: 1.5vh 2vw;
     margin-top: 2.1vh;
