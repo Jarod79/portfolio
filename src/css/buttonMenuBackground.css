@@ -32,7 +32,7 @@
 .footer_button_background p {
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-left: 1vw;
+  width: 2vw;
 }
 .footer_button_background:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -42,9 +42,9 @@
 .footer_button_background_b {
   background-color: rgba(4, 8, 75, 0.548);
   position: relative;
+  transition: 0.3s;
   top: 10vh;
   color: blanchedalmond;
-  transition: 0.5s;
   height: 13vh;
   width: 0.6vw;
   font-size: 0;
@@ -54,9 +54,9 @@
   color: blanchedalmond;
 }
 .footer_button_background_b p {
+  width: 2vw;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  margin-left: 1vw;
 }
 .footer_button_background_b:hover {
   background-color: rgba(4, 8, 75, 0.8);
@@ -82,6 +82,9 @@
     border-radius: 0 5px 5px 0;
     font-size: 0.6em;
   }
+  .footer_button_background p {
+    width: 4vw;
+  }
   .footer_button_background_b {
     z-index: 3;
     position: fixed;
@@ -97,6 +100,9 @@
     transition: none;
     border-radius: 0 5px 5px 0;
     font-size: 0.6em;
+  }
+  .footer_button_background_b p {
+    width: 4vw;
   }
   /* Css bouton menu téléphone */
   .footer_button_phone {
@@ -144,8 +150,19 @@
 }
 /* ------------------------------------------Responsive landscape-------------------------------------------- */
 @media screen and (max-height: 440px) {
+  /* Css du bouton pour changé le background */
   .footer_button_background {
-    top: 18vh;
+    position: fixed;
+    top: 20vh;
+    height: 20vh;
+    width: 3vw;
+    transition: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 0.6em;
+  }
+  .footer_button_background:hover {
+    position: fixed;
+    top: 20vh;
     height: 20vh;
     width: 3vw;
     transition: none;
@@ -153,18 +170,20 @@
     font-size: 0.6em;
   }
   .footer_button_background p {
-    margin-left: 0.7vw;
+    width: 2vw;
   }
-  .footer.footer_button_background:hover {
-    top: 18vh;
+  .footer_button_background_b {
+    position: fixed;
+    top: 20vh;
     height: 20vh;
     width: 3vw;
     transition: none;
     border-radius: 0 5px 5px 0;
     font-size: 0.6em;
   }
-  .footer_button_background_b {
-    top: 18vh;
+  .footer_button_background_b:hover {
+    position: fixed;
+    top: 20vh;
     height: 20vh;
     width: 3vw;
     transition: none;
@@ -172,14 +191,6 @@
     font-size: 0.6em;
   }
   .footer_button_background_b p {
-    margin-left: 0.7vw;
-  }
-  .footer_button_background_b :hover {
-    top: 18vh;
-    height: 20vh;
-    width: 3vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
+    width: 2vw;
   }
 }
