@@ -10,16 +10,27 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import BackgroundVideo from "./components/BackgroundVideo";
 import BackgroundVideoEarth from "./components/BackGroundVideoEarth";
-import Footer from "./components/footer";
+import ButtonMenuBackground from "./components/ButtonMenuBackground";
 
 const App = () => {
   const [change, setChange] = useState(true);
+  const [burgerButton, setBurgerButton] = useState(true);
   return (
     <div className="App">
       <HashRouter basename="/">
         {change && <BackgroundVideo changeVideo={change} />}
         {!change && <BackgroundVideoEarth changeVideo={change} />}
-        <Menu change={change} />
+        <ButtonMenuBackground
+          change={change}
+          setChange={setChange}
+          burgerButton={burgerButton}
+          setBurgerButton={setBurgerButton}
+        />
+        <Menu
+          change={change}
+          burgerButton={burgerButton}
+          setBurgerButton={setBurgerButton}
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<Apropos changeCss={change} />} />
@@ -27,7 +38,6 @@ const App = () => {
           <Route path="/Portfolio" element={<Portfolio changeCss={change} />} />
           <Route path="/Contact" element={<Contact change={change} />} />
         </Routes>
-        <Footer change={change} setChange={setChange} />
       </HashRouter>
     </div>
   );

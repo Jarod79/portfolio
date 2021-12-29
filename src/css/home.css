@@ -23,15 +23,16 @@
 .home img {
   width: 20vw;
 }
+/* ------------------------------------------Responsive bigscreen-------------------------------------------- */
 @media screen and (min-width: 2440px) {
   .home img {
     width: 10vw;
   }
 }
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
 @media screen and (max-width: 440px) {
   .home {
     font-size: 6vw;
-    height: 60vh;
   }
 
   .home img {

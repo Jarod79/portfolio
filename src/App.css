@@ -14,7 +14,6 @@ body {
   font-family: "Lato", "Times New Roman", Times, serif;
 }
 .App {
-  position: absolute;
   color: blanchedalmond;
   text-shadow: rgb(0, 0, 0) 1px 1px 2px;
   min-width: 100vw;
@@ -25,6 +24,7 @@ h1 {
   width: 100vw;
   font-size: 6vh;
 }
+/* ------------------------------------------Responsive bigscreen-------------------------------------------- */
 @media screen and (min-width: 2440px) {
   h1 {
     margin-top: 3vh;
@@ -33,6 +33,7 @@ h1 {
     font-size: 2vw;
   }
 }
+/* ------------------------------------------Responsive Phone-------------------------------------------- */
 @media screen and (max-width: 760px) {
   h1 {
     margin-top: 3vh;
@@ -41,6 +42,7 @@ h1 {
     font-size: 8vw;
   }
 }
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
 @media screen and (max-height: 440px) {
   h1 {
     font-size: 4vw;

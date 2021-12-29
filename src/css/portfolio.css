@@ -132,7 +132,11 @@
     height: 45vh;
   }
 }
+/* ------------------------------------------Responsive phone-------------------------------------------- */
 @media screen and (max-width: 760px) {
+  .portfolio h1 {
+    margin-top: 10vh;
+  }
   .portfolio_container {
     flex-direction: column;
   }
@@ -175,6 +179,9 @@
   }
 }
 @media screen and (max-height: 440px) {
+  .portfolio {
+    margin-top: 5vh;
+  }
   .portfolio_container {
     flex-direction: column;
   }

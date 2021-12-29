@@ -85,8 +85,11 @@ label {
 #submit_b:hover {
   background-color: rgba(4, 8, 75, 0.8);
 }
-
+/* ------------------------------------------Responsive phone-------------------------------------------- */
 @media screen and (max-width: 760px) {
+  .contact h1 {
+    margin-top: 10vh;
+  }
   .myForm {
     width: 80vw;
   }
@@ -99,9 +102,13 @@ label {
     font-size: 3vh;
   }
 }
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
 @media screen and (max-height: 440px) {
+  .contact {
+    margin-top: 6vh;
+  }
   .myForm {
-    margin-bottom: 5vh;
+    margin: 5vh 0;
   }
   .alert {
     font-size: 1.2em;

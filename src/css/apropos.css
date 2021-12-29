@@ -57,6 +57,7 @@
   width: 35vw;
   border-radius: 10px;
 }
+/* ------------------------------------------Responsive bigscreen-------------------------------------------- */
 @media screen and (min-width: 2440px) {
   .aPropos_content img {
     width: 20vw;
@@ -67,13 +68,17 @@
     border-radius: 10px;
   }
 }
+/* ------------------------------------------Responsive phone-------------------------------------------- */
 @media screen and (max-width: 760px) {
+  .aPropos h1 {
+    margin-top: 10vh;
+  }
   .aPropos_content {
     flex-direction: column-reverse;
     justify-content: start;
   }
   .aPropos_content p {
-    margin-top: 2vh;
+    margin-top: 5vh;
     padding: 2vh 2vw;
     text-align: center;
     font-size: 1em;
@@ -99,7 +104,7 @@
     width: 84vw;
   }
 }
-
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
 @media screen and (max-height: 440px) {
   .aPropos {
     margin-top: 5vh;
