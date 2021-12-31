@@ -13,65 +13,69 @@
 
 .content_button_background {
   position: fixed;
+  text-align: center;
   top: 10vh;
   background-color: rgba(0, 0, 0, 0.616);
   color: blanchedalmond;
   transition: 0.5s;
   height: 13vh;
-  width: 0.6vw;
-  font-size: 0;
+  margin-left: -2.2vw;
+  width: 3vw;
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 .content_button_background p {
-  writing-mode: vertical-rl;
   text-orientation: upright;
-  width: 2vw;
+  writing-mode: vertical-lr;
+  width: 50%;
+  margin: 0% 25%;
+  font-size: 0.8vw;
 }
 .content_button_background:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  width: 3vw;
-  font-size: 1.5vh;
+  margin-left: 0;
 }
 .content_button_background_b {
-  background-color: rgba(4, 8, 75, 0.548);
-  position: relative;
-  transition: 0.3s;
+  position: fixed;
+  text-align: center;
   top: 10vh;
+  background-color: rgba(4, 8, 75, 0.6);
   color: blanchedalmond;
+  transition: 0.5s;
   height: 13vh;
-  width: 0.6vw;
-  font-size: 0;
+  margin-left: -2.2vw;
+  width: 3vw;
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 .content_button_background_b p {
-  width: 2vw;
-  writing-mode: vertical-rl;
   text-orientation: upright;
+  writing-mode: vertical-lr;
+  width: 50%;
+  margin: 0% 25%;
+  font-size: 0.8vw;
 }
 .content_button_background_b:hover {
   background-color: rgba(4, 8, 75, 0.8);
-  width: 3vw;
-  font-size: 1.5vh;
+  margin-left: 0;
 }
 @media screen and (min-width: 2440px) {
   .content_button_background {
-    width: 0.4vw;
+    margin-left: -2.5vw;
   }
   .content_button_background p {
-    width: 1vw;
+    font-size: 0.4vw;
   }
   .content_button_background:hover {
     width: 1.5vw;
   }
   .content_button_background_b {
-    width: 0.4vw;
+    margin-left: -2.5vw;
   }
   .content_button_background_b p {
-    width: 1vw;
+    font-size: 0.4vw;
   }
   .content_button_background_b:hover {
     width: 1.5vw;

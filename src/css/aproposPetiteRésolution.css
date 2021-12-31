@@ -33,7 +33,7 @@
   }
 }
 /* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-height: 440px) {
+@media screen and (max-height: 620px) {
   .aPropos {
     margin-top: 5vh;
   }

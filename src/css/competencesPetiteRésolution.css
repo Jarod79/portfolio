@@ -1,19 +1,20 @@
 /* ------------------------------------------Responsive phone-------------------------------------------- */
 @media screen and (max-width: 760px) {
   .competences h1 {
-    margin-top: 10vh;
+    margin-top: 8vh;
   }
   .competences_content {
     margin-top: 8vh;
     flex-direction: column;
     text-align: center;
-    justify-content: start;
+    justify-content: space-around;
   }
   .competences_content_left {
     width: 80vw;
   }
   .competences_language {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 8vh;
   }
@@ -23,14 +24,51 @@
   .link_cv {
     text-decoration: none;
     color: blanchedalmond;
-    font-size: 3.5vw;
+    font-size: 3.8vw;
     width: 80vw;
     margin-left: 0vw;
   }
   .competences_content p {
     text-align: center;
-    font-size: 4vw;
-    width: 30vw;
-    padding: 1%;
+    font-size: 5vw;
+    padding: 2%;
+  }
+}
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
+@media screen and (max-height: 620px) {
+  .competences h1 {
+    height: 10vh;
+    margin: 5vh 0;
+  }
+  .competences_content {
+    margin: 5vh 0;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .competences_content_left {
+    width: 40vw;
+  }
+
+  .competences_content_left img {
+    width: 40vw;
+  }
+  .link_cv {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 2vw;
+    width: 40vw;
+  }
+  .competences_language {
+    margin: 5vh 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .competences_content p {
+    text-align: center;
+    font-size: 2.5vw;
+    width: 31vw;
+    height: 5vh;
   }
 }

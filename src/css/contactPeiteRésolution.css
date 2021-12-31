@@ -16,7 +16,7 @@
   }
 }
 /* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-height: 440px) {
+@media screen and (max-height: 620px) {
   .contact {
     margin-top: 5vh;
   }

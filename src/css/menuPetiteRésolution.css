@@ -51,7 +51,7 @@
   }
 }
 /* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-height: 440px) {
+@media screen and (max-height: 620px) {
   .menu {
     height: 15vh;
   }

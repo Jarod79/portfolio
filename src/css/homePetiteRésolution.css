@@ -8,7 +8,7 @@
   }
 }
 /* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-height: 440px) {
+@media screen and (max-height: 620px) {
   .home {
     font-size: 2.6vw;
   }

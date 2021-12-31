@@ -3,16 +3,21 @@
   z-index: -1;
   position: fixed;
 }
-
+@media screen and (max-width: 760px) {
+  .background-video {
+    width: 1920px;
+    margin-left: -35vw;
+  }
+}
 @media screen and (min-width: 1920px) {
   .background-video {
-    width: 3840px;
+    width: 2440px;
     margin-top: -30vh;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 2440px) {
   .background-video {
-    width: 1600px;
-    margin-left: -25vw;
+    width: 3840px;
+    margin-top: -30vh;
   }
 }
