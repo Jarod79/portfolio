@@ -42,7 +42,7 @@
   }
   .competences_content {
     margin: 5vh 0;
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
@@ -62,6 +62,7 @@
   }
   .competences_language {
     margin: 5vh 0;
+
     display: flex;
     flex-wrap: wrap;
   }
