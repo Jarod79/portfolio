@@ -1,0 +1,26 @@
+/* ------------------------------------------Responsive phone-------------------------------------------- */
+@media screen and (max-width: 760px) {
+  .contact h1 {
+    margin-top: 10vh;
+  }
+  .myForm {
+    width: 80vw;
+  }
+  .alert {
+    width: 80vw;
+    font-size: 3vh;
+  }
+  .confirmation {
+    width: 80vw;
+    font-size: 3vh;
+  }
+}
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
+@media screen and (max-height: 440px) {
+  .contact {
+    margin-top: 5vh;
+  }
+  .myForm {
+    margin-bottom: 5vh;
+  }
+}

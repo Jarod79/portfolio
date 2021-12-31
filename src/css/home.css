@@ -29,13 +29,3 @@
     width: 10vw;
   }
 }
-/* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-width: 440px) {
-  .home {
-    font-size: 6vw;
-  }
-
-  .home img {
-    width: 50vw;
-  }
-}

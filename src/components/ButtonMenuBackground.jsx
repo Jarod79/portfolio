@@ -7,17 +7,17 @@ const ButtonMenuBackground = ({
   setBurgerButton,
 }) => {
   return (
-    <div className="footer">
+    <div className="container_button">
       <button
         onClick={() => setChange(!change)}
         className={
-          change ? "footer_button_background" : "footer_button_background_b"
+          change ? "content_button_background" : "content_button_background_b"
         }
       >
         {!change ? <p>Bureau</p> : <p>Espace</p>}
       </button>
       <button
-        className={change ? "footer_button_phone" : "footer_button_phone_b"}
+        className={change ? "content_button_phone" : "content_button_phone_b"}
         onClick={() => setBurgerButton(!burgerButton)}
       >
         {burgerButton ? (

@@ -1,8 +1,16 @@
 @import "./portfolio.css";
+@import "./portfolioPetiteRésolution.css";
 @import "./apropos.css";
+@import "./aproposPetiteRésolution.css";
 @import "./backgroundVideo.css";
 @import "./competences.css";
+@import "./competencesPetiteRésolution.css";
 @import "./contact.css";
+@import "./contactPeiteRésolution.css";
+@import "./homePetiteRésolution.css";
 @import "./buttonMenuBackground.css";
+@import "./buttonMenuBackgroundPetiteRésolution.css";
 @import "./home.css";
+@import "./homePetiteRésolution.css";
 @import "./menu.css";
+@import "./menuPetiteRésolution.css";

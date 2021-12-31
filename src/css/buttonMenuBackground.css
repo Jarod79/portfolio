@@ -1,22 +1,18 @@
-.footer {
+.container_button {
   position: absolute;
   top: 0;
   height: 0;
 }
-.footer_b {
-  position: absolute;
-  top: 0;
-  height: 0;
-}
-.footer_button_phone {
+
+.content_button_phone {
   display: none;
 }
-.footer_button_phone_b {
+.content_button_phone_b {
   display: none;
 }
 
-.footer_button_background {
-  position: relative;
+.content_button_background {
+  position: fixed;
   top: 10vh;
   background-color: rgba(0, 0, 0, 0.616);
   color: blanchedalmond;
@@ -27,19 +23,18 @@
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  color: blanchedalmond;
 }
-.footer_button_background p {
+.content_button_background p {
   writing-mode: vertical-rl;
   text-orientation: upright;
   width: 2vw;
 }
-.footer_button_background:hover {
+.content_button_background:hover {
   background-color: rgba(0, 0, 0, 0.8);
   width: 3vw;
   font-size: 1.5vh;
 }
-.footer_button_background_b {
+.content_button_background_b {
   background-color: rgba(4, 8, 75, 0.548);
   position: relative;
   transition: 0.3s;
@@ -51,146 +46,34 @@
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  color: blanchedalmond;
 }
-.footer_button_background_b p {
+.content_button_background_b p {
   width: 2vw;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-.footer_button_background_b:hover {
+.content_button_background_b:hover {
   background-color: rgba(4, 8, 75, 0.8);
   width: 3vw;
   font-size: 1.5vh;
 }
-/* ------------------------------------------Responsive phone-------------------------------------------- */
-@media screen and (max-width: 760px) {
-  /* Css du bouton pour changé le background */
-  .footer_button_background {
-    position: fixed;
-    z-index: 3;
-    height: 10vh;
-    width: 5.5vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
+@media screen and (min-width: 2440px) {
+  .content_button_background {
+    width: 0.4vw;
   }
-  .footer_button_background:hover {
-    height: 10vh;
-    width: 5.5vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
+  .content_button_background p {
+    width: 1vw;
   }
-  .footer_button_background p {
-    width: 4vw;
+  .content_button_background:hover {
+    width: 1.5vw;
   }
-  .footer_button_background_b {
-    z-index: 3;
-    position: fixed;
-    height: 10vh;
-    width: 5.5vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
+  .content_button_background_b {
+    width: 0.4vw;
   }
-  .footer_button_background_b:hover {
-    height: 10vh;
-    width: 5.5vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
+  .content_button_background_b p {
+    width: 1vw;
   }
-  .footer_button_background_b p {
-    width: 4vw;
-  }
-  /* Css bouton menu téléphone */
-  .footer_button_phone {
-    position: fixed;
-    z-index: 3;
-    margin-left: 1vw;
-    padding-right: 1vw;
-    top: 2vh;
-    left: 88vw;
-    background-color: rgba(0, 0, 0, 0);
-    display: block;
-    width: 9vw;
-    border: none;
-  }
-  .footer_button_phone img {
-    width: 9vw;
-  }
-  .footer_button_phone p {
-    margin-top: -1.2vh;
-    margin-left: 1vw;
-    font-size: 11vw;
-    color: red;
-  }
-  .footer_button_phone_b {
-    position: fixed;
-    z-index: 3;
-    margin-left: 1vw;
-    padding-right: 1vw;
-    top: 2vh;
-    left: 88vw;
-    background-color: rgba(0, 0, 0, 0);
-    display: block;
-    width: 9vw;
-    border: none;
-  }
-  .footer_button_phone_b img {
-    width: 9vw;
-  }
-  .footer_button_phone_b p {
-    margin-top: -1.2vh;
-    margin-left: 1vw;
-    font-size: 11vw;
-    color: red;
-  }
-}
-/* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-height: 440px) {
-  /* Css du bouton pour changé le background */
-  .footer_button_background {
-    position: fixed;
-    top: 20vh;
-    height: 20vh;
-    width: 3vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
-  }
-  .footer_button_background:hover {
-    position: fixed;
-    top: 20vh;
-    height: 20vh;
-    width: 3vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
-  }
-  .footer_button_background p {
-    width: 2vw;
-  }
-  .footer_button_background_b {
-    position: fixed;
-    top: 20vh;
-    height: 20vh;
-    width: 3vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
-  }
-  .footer_button_background_b:hover {
-    position: fixed;
-    top: 20vh;
-    height: 20vh;
-    width: 3vw;
-    transition: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.6em;
-  }
-  .footer_button_background_b p {
-    width: 2vw;
+  .content_button_background_b:hover {
+    width: 1.5vw;
   }
 }

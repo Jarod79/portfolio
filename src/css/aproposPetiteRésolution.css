@@ -1,0 +1,66 @@
+/* ------------------------------------------Responsive phone-------------------------------------------- */
+@media screen and (max-width: 760px) {
+  .aPropos h1 {
+    margin-top: 10vh;
+  }
+  .aPropos_content {
+    flex-direction: column-reverse;
+  }
+  .aPropos_content p {
+    margin-top: 5vh;
+    padding: 2vh 2vw;
+    text-align: center;
+    font-size: 1em;
+    width: 80vw;
+  }
+  .image {
+    margin: 10vh;
+    width: 84vw;
+  }
+  .aPropos_content_b {
+    flex-direction: column-reverse;
+  }
+  .aPropos_content_b p {
+    margin-top: 5vh;
+    padding: 2vh 2vw;
+    text-align: center;
+    font-size: 1em;
+    width: 80vw;
+  }
+  .image_b {
+    margin: 10vh;
+    width: 84vw;
+  }
+}
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
+@media screen and (max-height: 440px) {
+  .aPropos {
+    margin-top: 5vh;
+  }
+  .aPropos_content {
+    flex-direction: column-reverse;
+  }
+  .aPropos_content p {
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 1.4em;
+    width: 80vw;
+  }
+  .image {
+    margin: 10vh;
+    width: 50vw;
+  }
+  .aPropos_content_b {
+    flex-direction: column-reverse;
+  }
+  .aPropos_content_b p {
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 1.4em;
+    width: 80vw;
+  }
+  .image_b {
+    margin: 10vh;
+    width: 50vw;
+  }
+}

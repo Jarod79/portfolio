@@ -51,12 +51,14 @@
   border-radius: 50%;
   background-color: blanchedalmond;
   border: solid white 1px;
+  margin-right: 1vw;
 }
 .linkedin:hover {
   width: 2.8vw;
 }
 .git {
   width: 2.6vw;
+  margin-left: 1vw;
   border-radius: 50%;
   border: solid white 1px;
   background-color: blanchedalmond;
@@ -80,85 +82,15 @@
 /* ------------------------------------------Responsive bigscreen-------------------------------------------- */
 @media screen and (min-width: 2440px) {
   .linkedin {
-    width: 1.6vw;
+    width: 1.4vw;
   }
   .linkedin:hover {
     width: 1.6vw;
   }
   .git {
-    width: 2vw;
+    width: 1.4vw;
   }
   .git:hover {
-    width: 2vw;
-  }
-}
-/* ------------------------------------------Responsive phone-------------------------------------------- */
-@media screen and (max-width: 760px) {
-  .menu {
-    position: fixed;
-    top: 0;
-    margin-bottom: 20vh;
-    flex-direction: column;
-    width: 100vw;
-    height: 35vh;
-    transition: 0.6s;
-    max-width: 100vw;
-    max-height: 35vh;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  #menu_show {
-    overflow: hidden;
-    transition: 0.6s;
-    max-width: 0;
-  }
-
-  .menu_b {
-    position: fixed;
-    top: 0;
-    flex-direction: column;
-    width: 100vw;
-    height: 35vh;
-    transition: 0.6s;
-    max-width: 100vw;
-    background-color: rgba(4, 8, 75, 0.85);
-  }
-
-  .linkedin {
-    width: 10vw;
-  }
-  .linkedin:hover {
-    width: 10vw;
-  }
-  .git {
-    margin-top: 1vh;
-    width: 10vw;
-  }
-  .git:hover {
-    width: 10vw;
-  }
-}
-/* ------------------------------------------Responsive landscape-------------------------------------------- */
-@media screen and (max-height: 440px) {
-  .menu {
-    height: 15vh;
-  }
-  .menu_b {
-    height: 15vh;
-  }
-  .menu_link {
-    font-size: 1em;
-  }
-  .linkedin {
-    width: 3.8vw;
-  }
-  .linkedin:hover {
-    width: 3.8vw;
-  }
-  .git {
-    width: 4vw;
-  }
-  .git:hover {
-    width: 4vw;
+    width: 1.6vw;
   }
 }

@@ -1,0 +1,138 @@
+/* ------------------------------------------Responsive phone-------------------------------------------- */
+@media screen and (max-width: 760px) {
+  /* Css du bouton pour changé le background */
+  .content_button_background {
+    background-color: rgba(0, 0, 0, 0.8);
+    top: -7vh;
+    left: -14vw;
+    border-radius: 50%;
+    z-index: 3;
+    height: 14vh;
+    width: 28vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background:hover {
+    top: -7vh;
+    left: -14vw;
+    border-radius: 50%;
+    z-index: 3;
+    height: 14vh;
+    width: 28vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background p {
+    writing-mode: vertical-lr;
+    margin-top: 5.5vh;
+    height: 5vh;
+    word-wrap: break-word;
+    margin-left: 16vw;
+  }
+  .content_button_background_b {
+    top: -7vh;
+    left: -14vw;
+    border-radius: 50%;
+    z-index: 3;
+    height: 14vh;
+    width: 28vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background_b:hover {
+    top: -7vh;
+    left: -14vw;
+    border-radius: 50%;
+    z-index: 3;
+    height: 14vh;
+    width: 28vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background_b p {
+    writing-mode: vertical-lr;
+    margin-top: 5.5vh;
+    height: 5vh;
+    word-wrap: break-word;
+    margin-left: 16vw;
+  }
+  /* Css bouton menu téléphone */
+  .content_button_phone {
+    position: fixed;
+    z-index: 3;
+    padding-right: 1vw;
+    top: 2vh;
+    left: 88vw;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    width: 9vw;
+    border: none;
+  }
+  .content_button_phone img {
+    width: 9vw;
+  }
+  .content_button_phone p {
+    margin-top: -2.5vh;
+    font-size: 15vw;
+    color: red;
+  }
+  .content_button_phone_b {
+    position: fixed;
+    z-index: 3;
+    margin-left: 1vw;
+    padding-right: 1vw;
+    top: 2vh;
+    left: 88vw;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    width: 9vw;
+    border: none;
+  }
+  .content_button_phone_b img {
+    width: 9vw;
+  }
+  .content_button_phone_b p {
+    margin-top: -2.5vh;
+    font-size: 15vw;
+    color: red;
+  }
+}
+/* ------------------------------------------Responsive landscape-------------------------------------------- */
+@media screen and (max-height: 440px) {
+  /* Css du bouton pour changé le background */
+  .content_button_background {
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 20vh;
+    height: 20vh;
+    width: 3vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background:hover {
+    top: 20vh;
+    height: 20vh;
+    width: 3vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background p {
+    width: 2vw;
+  }
+  .content_button_background_b {
+    top: 20vh;
+    height: 20vh;
+    width: 3vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background_b:hover {
+    top: 20vh;
+    height: 20vh;
+    width: 3vw;
+    transition: none;
+    font-size: 0.6em;
+  }
+  .content_button_background_b p {
+    width: 2vw;
+  }
+}

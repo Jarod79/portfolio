@@ -88,39 +88,3 @@
     padding: 1%;
   }
 }
-/* ------------------------------------------Responsive phone-------------------------------------------- */
-@media screen and (max-width: 760px) {
-  .competences h1 {
-    margin-top: 10vh;
-  }
-  .competences_content {
-    margin-top: 8vh;
-    flex-direction: column;
-    text-align: center;
-    justify-content: start;
-  }
-  .competences_content_left {
-    width: 80vw;
-  }
-  .competences_language {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8vh;
-  }
-  .competences_content_left img {
-    width: 80vw;
-  }
-  .link_cv {
-    text-decoration: none;
-    color: blanchedalmond;
-    font-size: 3.5vw;
-    width: 80vw;
-    margin-left: 0vw;
-  }
-  .competences_content p {
-    text-align: center;
-    font-size: 4vw;
-    width: 30vw;
-    padding: 1%;
-  }
-}
