@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## For beginning
+
+In the project directory, you must run:
+
+### `git clone`
+
+Clone the repository https://github.com/Jarod79/portfolio.git
+
+### `npm install`
+
+Install required packages npm
+
 ## Available Scripts
 
 In the project directory, you can run:
