@@ -22,15 +22,6 @@
   background-color: rgba(0, 0, 0, 0.616);
 }
 
-#manu_hide {
-  display: block;
-}
-.menu_button_phone {
-  display: none;
-}
-.menu_button_phone_b {
-  display: none;
-}
 .menu_link {
   color: blanchedalmond;
   text-decoration: none;

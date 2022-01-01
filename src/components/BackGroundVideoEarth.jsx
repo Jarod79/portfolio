@@ -1,5 +1,5 @@
 import React from "react";
-import Earth from "../img/Background.mp4";
+import Earth from "../video/Background.mp4";
 
 const BackgroundVideoEarth = ({ changeVideo }) => {
   return (
