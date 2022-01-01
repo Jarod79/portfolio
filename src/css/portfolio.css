@@ -55,8 +55,7 @@
   border-radius: 10px;
 }
 .portfolio_content :hover {
-  width: 25vw;
-  padding: 0 1%;
+  padding: 0 1vw;
   text-decoration: none;
   display: flex;
   justify-content: space-around;
@@ -84,8 +83,7 @@
   border-radius: 10px;
 }
 .portfolio_content_b :hover {
-  width: 25vw;
-  padding: 0 1%;
+  padding: 0 1vw;
   text-decoration: none;
   display: flex;
   justify-content: space-around;

@@ -2,19 +2,23 @@
 @media screen and (max-width: 760px) {
   .portfolio h1 {
     margin-top: 10vh;
+    margin-bottom: 5vh;
   }
   .portfolio_container {
     flex-direction: column;
-  }
-  .portfolio h1 {
-    margin-bottom: 5vh;
   }
   .portfolio_content img {
     width: 60vw;
     height: 20vh;
   }
+  .portfolio_content a {
+    height: 20vh;
+  }
   .portfolio_content_b img {
     width: 60vw;
+    height: 20vh;
+  }
+  .portfolio_content_b a {
     height: 20vh;
   }
   .content_link {
@@ -38,8 +42,7 @@
   }
   .content_phone_paragraph {
     text-align: center;
-    margin-top: -7vh;
-    margin-bottom: 6vh;
+    margin: 2vh 0 6vh 0;
     display: block;
     width: 60vw;
   }
@@ -51,34 +54,34 @@
   }
   .portfolio_container {
     flex-direction: column;
+    justify-content: center;
   }
-  .portfolio_content {
-    width: 100vw;
-    height: 40vh;
-  }
-  .portfolio_content_b {
-    width: 100vw;
-    height: 40vh;
-  }
+
   .portfolio_content img {
     width: 50vw;
+    height: 55vh;
+  }
+  .portfolio_content a {
     height: 55vh;
   }
   .portfolio_content_b img {
     width: 50vw;
     height: 55vh;
   }
+  .portfolio_content_b a {
+    height: 55vh;
+  }
   .content_link {
     height: 55vh;
   }
   .portfolio_card {
-    margin-top: 9vh;
     width: 50vw;
+    margin: 9vh 25vw 0 25vw;
     height: 100vh;
   }
   .title_project {
     height: 15vh;
-    width: 100vw;
+    width: 50vw;
     font-size: 1.8vw;
     text-align: center;
   }
@@ -90,9 +93,8 @@
   }
   .content_phone_paragraph {
     text-align: center;
-    padding: 0 2.25vw;
+    padding: 5vh 2.25vw;
     display: block;
     width: 45vw;
-    margin: 20vh 25vw;
   }
 }
