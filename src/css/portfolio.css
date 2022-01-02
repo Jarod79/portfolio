@@ -7,6 +7,7 @@
     transform: translate(0, 0);
   }
 }
+/* Css for all div */
 .portfolio {
   z-index: 1;
   align-items: center;
@@ -14,16 +15,14 @@
   animation-duration: 1s;
   flex-wrap: wrap;
   display: flex;
+  justify-content: space-around;
   width: 100vw;
   height: 75vh;
 }
 
-.portfolio_container {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-}
+/* Css for div content title and img  */
 .portfolio_card {
+  display: flex;
   flex-direction: column;
   width: 30vw;
 }
@@ -40,13 +39,37 @@
 .portfolio_content {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+.content_link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.content_hover {
+  position: absolute;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5vw;
+  font-size: 0;
+  width: 20vw;
+  height: 30vh;
+}
+.content_hover:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 2.5vh;
+  border-radius: 10px;
 }
 
 .portfolio_content a {
   color: blanchedalmond;
-  height: 30vh;
+  text-decoration: none;
   border-radius: 10px;
   border: none;
+  font-size: 2.5vh;
 }
 
 .portfolio_content img {
@@ -54,16 +77,7 @@
   height: 30vh;
   border-radius: 10px;
 }
-.portfolio_content :hover {
-  padding: 0 1vw;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.616);
-  font-size: 1.6vw;
-}
+
 /* Css for content whit background earth */
 .portfolio_content_b {
   display: flex;
@@ -82,16 +96,23 @@
   height: 30vh;
   border-radius: 10px;
 }
-.portfolio_content_b :hover {
-  padding: 0 1vw;
-  text-decoration: none;
+.content_hover_b {
+  transition: 0.6s;
+  position: absolute;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  text-align: center;
-  background-color: rgba(4, 8, 75, 0.274);
-  font-size: 1.6vw;
+  padding: 0 2.5vw;
+  font-size: 0;
+  width: 20vw;
+  height: 30vh;
 }
+.content_hover_b:hover {
+  background-color: rgba(4, 8, 75, 0.8);
+  font-size: 2.5vh;
+  animation: 0.5s;
+  border-radius: 10px;
+}
+
 .content_phone_paragraph {
   display: none;
 }
@@ -115,6 +136,13 @@
     margin-bottom: 5vh;
     font-size: 0.8vw;
   }
+  .content_hover {
+    width: 15vw;
+    height: 45vh;
+  }
+  .content_hover:hover {
+    font-size: 4vh;
+  }
   /* Css for content whit background earth */
 
   .portfolio_content_b a {
@@ -125,5 +153,12 @@
   .portfolio_content_b img {
     width: 20vw;
     height: 45vh;
+  }
+  .content_hover_b {
+    width: 15vw;
+    height: 45vh;
+  }
+  .content_hover_b:hover {
+    font-size: 4vh;
   }
 }

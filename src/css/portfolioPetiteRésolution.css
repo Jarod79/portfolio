@@ -4,9 +4,7 @@
     margin-top: 10vh;
     margin-bottom: 5vh;
   }
-  .portfolio_container {
-    flex-direction: column;
-  }
+
   .portfolio_content img {
     width: 60vw;
     height: 20vh;
@@ -21,9 +19,7 @@
   .portfolio_content_b a {
     height: 20vh;
   }
-  .content_link {
-    height: 20vh;
-  }
+
   .portfolio_card {
     width: 60vw;
     margin: 0 20vw;
@@ -40,6 +36,9 @@
   .content_hover {
     display: none;
   }
+  .content_hover_b {
+    display: none;
+  }
   .content_phone_paragraph {
     text-align: center;
     margin: 2vh 0 6vh 0;
@@ -52,11 +51,6 @@
   .portfolio {
     margin-top: 5vh;
   }
-  .portfolio_container {
-    flex-direction: column;
-    justify-content: center;
-  }
-
   .portfolio_content img {
     width: 50vw;
     height: 55vh;
@@ -71,9 +65,7 @@
   .portfolio_content_b a {
     height: 55vh;
   }
-  .content_link {
-    height: 55vh;
-  }
+
   .portfolio_card {
     width: 50vw;
     margin: 9vh 25vw 0 25vw;
@@ -89,6 +81,9 @@
     display: block;
   }
   .content_hover {
+    display: none;
+  }
+  .content_hover_b {
     display: none;
   }
   .content_phone_paragraph {

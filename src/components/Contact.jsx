@@ -13,7 +13,7 @@ const Contact = ({ change }) => {
   //Regex pour la validation de l'email
   const emailRegex = /\S+@\S+\.\S+/;
 
-  //Validation du formaulaire et envois du mail
+  //Validation du formulaire et envois du mail
   const validate = (e) => {
     e.preventDefault();
     if (
@@ -23,12 +23,16 @@ const Contact = ({ change }) => {
       emailRegex.test(mail)
     ) {
       axios
-        .post("https://portfolioeabackend.herokuapp.com/", {
-          prenom,
-          nom,
-          mail,
-          message,
-        })
+        .post(
+          "https://portfolioeabackend.herokuapp.com/",
+
+          {
+            prenom,
+            nom,
+            mail,
+            message,
+          }
+        )
         .then((response) => {
           setConfirmation("Votre message a bien été pris en compte, merci.");
           setEmpty("");
