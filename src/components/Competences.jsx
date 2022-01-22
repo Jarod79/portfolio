@@ -8,9 +8,11 @@ const Competences = () => {
       <div className="competences_content">
         <div className="competences_content_left">
           <img src={Logo} alt="CODE" />
-          <a className="link_cv" href={Cv} download="Eric-Arrijuria:CV.pdf">
-            Télécharger mon C.V
-          </a>
+          <h3>
+            <a className="link_cv" href={Cv} download="Eric-Arrijuria:CV.pdf">
+              Télécharger mon C.V
+            </a>
+          </h3>
         </div>
         <div className="competences_language">
           <p>Javascript</p>

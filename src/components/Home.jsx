@@ -1,4 +1,4 @@
-import Avatar from "../img/Avatar.png";
+import Avatar from "../img/Avatar2.svg";
 
 const Home = () => {
   return (
