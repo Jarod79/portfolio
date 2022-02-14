@@ -22,7 +22,8 @@ const Competences = () => {
           <p>Node Js</p>
           <p>Express</p>
           <p>GitHub</p>
-          <p>Mysql</p>
+          <p>Sql</p>
+          <p>Typescript</p>
           <p>Méthode Agile</p>
         </div>
       </div>
