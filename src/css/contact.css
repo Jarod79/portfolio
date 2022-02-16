@@ -37,7 +37,7 @@ label {
 /* Style the submit button*/
 #submit {
   background-color: var(--bckgColorBlack);
-  color: blanchedaFlmond;
+  color: var(--textColor);
   padding: 12px 20px;
   margin: 0 1vw;
   border: none;

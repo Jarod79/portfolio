@@ -16,15 +16,15 @@ const App = () => {
   const [burgerButton, setBurgerButton] = useState(true);
   return (
     <div className="App">
-      <BrowserRouter basename="/">
-        {change && <BackgroundVideo changeVideo={change} />}
-        {!change && <BackgroundVideoEarth changeVideo={change} />}
-        <ButtonMenuBackground
-          change={change}
-          setChange={setChange}
-          burgerButton={burgerButton}
-          setBurgerButton={setBurgerButton}
-        />
+      {change && <BackgroundVideo changeVideo={change} />}
+      {!change && <BackgroundVideoEarth changeVideo={change} />}
+      <ButtonMenuBackground
+        change={change}
+        setChange={setChange}
+        burgerButton={burgerButton}
+        setBurgerButton={setBurgerButton}
+      />
+      <BrowserRouter basename="/portfolio">
         <Menu
           change={change}
           burgerButton={burgerButton}
@@ -32,7 +32,7 @@ const App = () => {
         />
 
         <Routes>
-          <Route path="/Accueil" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<Apropos changeCss={change} />} />
           <Route path="/Competences" element={<Competences />} />
           <Route path="/Portfolio" element={<Portfolio changeCss={change} />} />

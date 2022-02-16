@@ -1,6 +1,6 @@
 /* Css for content whit background office */
 .menu {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slideUp;
   z-index: 2;
   display: flex;
@@ -50,7 +50,7 @@
 /* Css for content whit background earth */
 .menu_b {
   animation-duration: 1s;
-  animation-name: slideInPhone;
+  animation-name: slideUp;
   flex-wrap: wrap;
   z-index: 2;
   display: flex;

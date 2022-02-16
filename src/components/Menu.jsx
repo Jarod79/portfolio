@@ -25,7 +25,7 @@ const Menu = ({ change, burgerButton, setBurgerButton }) => {
         <NavLink
           activeclassname="active"
           className="menu_link"
-          to="/Accueil"
+          to="/"
           onClick={() => setBurgerButton(true)}
         >
           ACCUEIL
