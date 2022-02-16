@@ -1,15 +1,5 @@
-@keyframes slideIn {
-  0% {
-    transform: translate(-100vw, 0vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
 .competences {
-  animation-name: slideIn;
+  animation-name: slideLeft;
   animation-duration: 1s;
   flex-wrap: wrap;
   display: flex;
@@ -64,7 +54,7 @@
   position: relative;
   outline: none;
   text-decoration: none;
-  color: blanchedalmond;
+  color: var(--textColor);
   font-size: 2vw;
 }
 
@@ -151,7 +141,7 @@ h3 > a:focus:before {
   }
   .link_cv {
     text-decoration: none;
-    color: blanchedalmond;
+    color: var(--textColor);
     font-size: 1vw;
   }
   .competences_content p {

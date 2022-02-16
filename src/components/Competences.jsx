@@ -18,11 +18,11 @@ const Competences = () => {
           <p>Javascript</p>
           <p>HTML5</p>
           <p>CSS3</p>
+          <p>Sql</p>
           <p>React</p>
           <p>Node Js</p>
           <p>Express</p>
           <p>GitHub</p>
-          <p>Sql</p>
           <p>Typescript</p>
           <p>Méthode Agile</p>
         </div>

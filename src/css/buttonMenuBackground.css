@@ -15,8 +15,8 @@
   position: fixed;
   text-align: center;
   top: 10vh;
-  background-color: rgba(0, 0, 0, 0.616);
-  color: blanchedalmond;
+  background-color: var(--bckgColorBlack);
+  color: var(--textColor);
   transition: 0.5s;
   height: 13vh;
   margin-left: -2.2vw;
@@ -41,7 +41,7 @@
   text-align: center;
   top: 10vh;
   background-color: rgba(4, 8, 75, 0.6);
-  color: blanchedalmond;
+  color: var(--textColor);
   transition: 0.5s;
   height: 13vh;
   margin-left: -2.2vw;
@@ -58,7 +58,7 @@
   font-size: 0.8vw;
 }
 .content_button_background_b:hover {
-  background-color: rgba(4, 8, 75, 0.8);
+  background-color: var(--bckgColorBlue);
   margin-left: 0;
 }
 @media screen and (min-width: 2440px) {

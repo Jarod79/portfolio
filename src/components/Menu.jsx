@@ -25,7 +25,7 @@ const Menu = ({ change, burgerButton, setBurgerButton }) => {
         <NavLink
           activeclassname="active"
           className="menu_link"
-          to="/"
+          to="/Accueil"
           onClick={() => setBurgerButton(true)}
         >
           ACCUEIL
@@ -49,7 +49,7 @@ const Menu = ({ change, burgerButton, setBurgerButton }) => {
         <NavLink
           activeclassname="active"
           className="menu_link"
-          to="/portfolio"
+          to="/Portfolio"
           onClick={() => setBurgerButton(true)}
         >
           PORTFOLIO
@@ -57,7 +57,7 @@ const Menu = ({ change, burgerButton, setBurgerButton }) => {
         <NavLink
           activeclassname="active"
           className="menu_link"
-          to="/contact"
+          to="/Contact"
           onClick={() => setBurgerButton(true)}
         >
           CONTACT

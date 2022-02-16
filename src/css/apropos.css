@@ -1,15 +1,5 @@
-@keyframes slideIn2 {
-  0% {
-    transform: translate(0vw, 100vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
 .aPropos {
-  animation-name: slideIn2;
+  animation-name: slideBottom;
   animation-duration: 1s;
   flex-wrap: wrap;
   display: flex;
@@ -31,8 +21,8 @@
   font-size: 1.6em;
   width: 35vw;
   border-radius: 10px;
-  padding: 8vh 1vw;
-  background-color: rgba(0, 0, 0, 0.664);
+  padding: 2vh 1vw;
+  background-color: var(--bckgColorBlack);
 }
 .image {
   width: 35vw;
@@ -47,11 +37,11 @@
 }
 .aPropos_content_b p {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.6em;
   width: 35vw;
   border-radius: 10px;
-  padding: 8vh 1vw;
-  background-color: rgba(4, 8, 75, 0.274);
+  padding: 2vh 1vw;
+  background-color: var(--bckgColorBlue);
 }
 .image_b {
   width: 35vw;

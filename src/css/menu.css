@@ -1,17 +1,7 @@
-@keyframes slideInPhone {
-  0% {
-    transform: translate(0vw, -100vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
 /* Css for content whit background office */
 .menu {
-  animation-duration: 1s;
-  animation-name: slideInPhone;
+  animation-duration: 2s;
+  animation-name: slideUp;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -19,11 +9,11 @@
   width: 100vw;
   height: 8vh;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: var(--bckgColorBlack);
 }
 
 .menu_link {
-  color: blanchedalmond;
+  color: var(--textColor);
   text-decoration: none;
   font-size: 2.5vh;
   margin: 0 1%;
@@ -40,7 +30,7 @@
 .linkedin {
   width: 2.6vw;
   border-radius: 50%;
-  background-color: blanchedalmond;
+  background-color: var(--textColor);
   border: solid white 1px;
   margin-right: 1vw;
 }
@@ -52,7 +42,7 @@
   margin-left: 1vw;
   border-radius: 50%;
   border: solid white 1px;
-  background-color: blanchedalmond;
+  background-color: var(--textColor);
 }
 .git:hover {
   width: 2.8vw;
@@ -68,7 +58,7 @@
   justify-content: center;
   width: 100vw;
   height: 8vh;
-  background-color: rgba(4, 8, 75, 0.274);
+  background-color: var(--bckgColorBlue);
 }
 /* ------------------------------------------Responsive bigscreen-------------------------------------------- */
 @media screen and (min-width: 2440px) {

@@ -5,7 +5,7 @@ const Home = () => {
     <div className="home">
       <img src={Avatar} alt="Avatar" />
       <h1>ERIC ARRIJURIA</h1>
-      <p>Développeur Web </p>
+      <p>Développeur Web et Web Mobile</p>
     </div>
   );
 };

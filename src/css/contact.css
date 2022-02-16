@@ -1,14 +1,5 @@
-@keyframes slideIn4 {
-  0% {
-    transform: translate(0vw, -100vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
 .contact {
-  animation-name: slideIn4;
+  animation-name: slideLeft;
   animation-duration: 1s;
   flex-wrap: wrap;
   display: flex;
@@ -45,8 +36,8 @@ label {
 
 /* Style the submit button*/
 #submit {
-  background-color: rgba(0, 0, 0, 0.616);
-  color: blanchedalmond;
+  background-color: var(--bckgColorBlack);
+  color: blanchedaFlmond;
   padding: 12px 20px;
   margin: 0 1vw;
   border: none;
@@ -74,8 +65,8 @@ label {
   background-color: rgba(0, 0, 0, 0.8);
 }
 #submit_b {
-  background-color: rgba(4, 8, 75, 0.274);
-  color: blanchedalmond;
+  background-color: rgba(4, 8, 75, 0.4);
+  color: var(--textColor);
   padding: 12px 20px;
   margin: 0 2%;
   border: none;
@@ -83,5 +74,5 @@ label {
   margin-top: 1rem;
 }
 #submit_b:hover {
-  background-color: rgba(4, 8, 75, 0.8);
+  background-color: var(--bckgColorBlue);
 }

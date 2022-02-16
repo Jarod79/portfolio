@@ -1,17 +1,8 @@
-@keyframes slideIn3 {
-  0% {
-    transform: translate(0vw, 100vh);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
 /* Css for all div */
 .portfolio {
   z-index: 1;
   align-items: center;
-  animation-name: slideIn3;
+  animation-name: slideBottom;
   animation-duration: 1s;
   flex-wrap: wrap;
   display: flex;
@@ -59,13 +50,13 @@
   height: 30vh;
 }
 .content_hover:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--bckgColorBlack);
   font-size: 2.5vh;
   border-radius: 10px;
 }
 
 .portfolio_content a {
-  color: blanchedalmond;
+  color: var(--textColor);
   text-decoration: none;
   border-radius: 10px;
   border: none;
@@ -85,7 +76,7 @@
 }
 
 .portfolio_content_b a {
-  color: blanchedalmond;
+  color: var(--textColor);
   height: 30vh;
   border-radius: 10px;
   border: none;
@@ -107,7 +98,7 @@
   height: 30vh;
 }
 .content_hover_b:hover {
-  background-color: rgba(4, 8, 75, 0.8);
+  background-color: var(--bckgColorBlue);
   font-size: 2.5vh;
   animation: 0.5s;
   border-radius: 10px;
