@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Navigate } from 'react-router-dom';
 import axios from "axios";
 
 const Contact = ({ change }) => {
@@ -7,6 +8,7 @@ const Contact = ({ change }) => {
   const [nom, setNom] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
+  const [redirectHome, setRedirectHome] = useState(false);
   //Usestate pour l'affichage des différentes erreurs
   const [empty, setEmpty] = useState("");
   const [confirmation, setConfirmation] = useState("");
@@ -33,6 +35,9 @@ const Contact = ({ change }) => {
         .then((response) => {
           setConfirmation("Votre message a bien été pris en compte, merci.");
           setEmpty("");
+          setTimeout(() => {
+            setRedirectHome(true);
+          }, 1000);
         })
         .catch((err) => console.error(err));
     } else if (!emailRegex.test(mail)) {
@@ -44,6 +49,9 @@ const Contact = ({ change }) => {
     }
   };
 
+  useEffect(()=>{
+    
+  },[redirectHome])
   return (
     <div className="contact">
       <h1>Contact</h1>
@@ -95,6 +103,7 @@ const Contact = ({ change }) => {
           </button>
           {empty && <div className={"alert"}>{empty}</div>}
           {confirmation && <div className={"confirmation"}>{confirmation}</div>}
+          {redirectHome && <Navigate to="/"/>}
         </form>
       </div>
     </div>
