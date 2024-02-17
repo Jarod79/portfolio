@@ -15,16 +15,24 @@ const Competences = () => {
           </h3>
         </div>
         <div className="competences_language">
-          <p>Javascript</p>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>Sql</p>
-          <p>React</p>
-          <p>Node Js</p>
-          <p>Express</p>
-          <p>GitHub</p>
-          <p>Typescript</p>
-          <p>Méthode Agile</p>
+          <div>
+            <p>Javascript</p>
+            <p>PHP</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>React</p>
+            <p>Next JS</p>
+            <p>Node Js</p>
+          </div>
+          <div>
+            <p>Sass</p>
+            <p>Express</p>
+            <p>GitHub</p>
+            <p>Mysql</p>
+            <p>Wordpress</p>
+            <p>Prestashop</p>
+            <p>Méthode Agile</p>
+          </div>
         </div>
       </div>
     </div>

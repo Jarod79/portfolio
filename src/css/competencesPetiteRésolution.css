@@ -23,13 +23,14 @@
   }
   .link_cv {
     text-decoration: none;
-    color: var(--textColor);
+    color: blanchedalmond;
     font-size: 3.8vw;
     width: 80vw;
     margin-left: 0vw;
   }
   .competences_content p {
     text-align: center;
+    width: 30vw;
     font-size: 5vw;
     padding: 2%;
   }
@@ -56,7 +57,7 @@
   }
   .link_cv {
     text-decoration: none;
-    color: var(--textColor);
+    color: blanchedalmond;
     font-size: 2vw;
     width: 40vw;
   }
